@@ -1,5 +1,5 @@
-import { ITransactionRequestConfig, IPlugin, ITransactionResult, Converter, utils } from "@ramestta/ramajs";
-import { BigNumber, ethers } from "ethers";
+import { IPlugin } from "@ramestta/ramajs";
+import { BigNumber } from "ethers";
 import { EtherWeb3Client } from "./ethers";
 import { RamaBigNumber } from "./utils";
 

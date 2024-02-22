@@ -1,7 +1,7 @@
-import { providers, Wallet, utils, Contract, ethers, BigNumber } from "ethers";
+import { providers, Wallet, utils, Contract, BigNumber } from "ethers";
 import { EthJsContract } from "./ethjs_contract";
 import { doNothing } from "../helpers";
-import { BaseWeb3Client, IBlockWithTransaction, IError, IJsonRpcRequestPayload, IJsonRpcResponse, ITransactionRequestConfig, ITransactionWriteResult } from "@ramestta/ramajs";
+import { BaseWeb3Client, IError, IJsonRpcRequestPayload, IJsonRpcResponse, ITransactionRequestConfig, ITransactionWriteResult } from "@ramestta/ramajs";
 import { ethBlockToRamaBlock, ethReceiptToRamaReceipt, ethTxToRamaTx } from "../utils";
 
 type ETHER_PROVIDER = providers.JsonRpcProvider;
@@ -57,13 +57,13 @@ export class EtherWeb3Client extends BaseWeb3Client {
         return this.signer.getChainId();
     }
 
-    getBalance(address) {
+    getBalance(address):any {
         return this.provider.getBalance(address).then(balance => {
             return balance.toString();
         });
     }
 
-    getAccounts() {
+    getAccounts():any {
         return this.signer.getAddress().then(address => {
             return [address];
         });
@@ -156,7 +156,7 @@ export class EtherWeb3Client extends BaseWeb3Client {
         return BigNumber.from(value).toString();
     }
 
-    signTypedData(signer, typedData) {
+    signTypedData(signer, typedData):any {
         const {domain, types, message: value} = typedData;
         if(types.EIP712Domain) {
             delete types.EIP712Domain;

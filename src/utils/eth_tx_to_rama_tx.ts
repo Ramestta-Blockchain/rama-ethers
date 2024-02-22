@@ -1,4 +1,4 @@
-import { IBlock, ITransactionData, ITransactionResult } from "@ramestta/ramajs";
+import { ITransactionData } from "@ramestta/ramajs";
 import { providers } from "ethers";
 
 export const ethTxToRamaTx = (tx: providers.TransactionResponse) => {

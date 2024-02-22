@@ -1,6 +1,6 @@
 {
   "name": "@ramestta/rama-ethers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ethers plugin for rama.js",
   "main": "dist/npm.export.js",
   "types": "dist/ts/index.d.ts",
@@ -37,10 +37,10 @@
     "ethers": "^5.5.1"
   },
   "peerDependencies": {
-    "@ramestta/ramajs": "^1.0.0"
+    "@ramestta/ramajs": "^1.0.12"
   },
   "devDependencies": {
-    "@ramestta/ramajs": "^1.0.0",
+    "@ramestta/ramajs": "^1.0.12",
     "copy-webpack-plugin": "^6.1.1",
     "cross-env": "^7.0.3",
     "ts-loader": "^8.0.0",

@@ -1,4 +1,4 @@
-import { BaseContractMethod, ITransactionRequestConfig, ITransactionWriteResult, Logger } from "@ramestta/ramajs";
+import { BaseContractMethod, ITransactionRequestConfig, Logger } from "@ramestta/ramajs";
 import { BigNumber, Contract, PopulatedTransaction } from "ethers";
 import { TransactionWriteResult } from "../helpers";
 
